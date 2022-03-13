@@ -17,7 +17,7 @@ public class MatrixPath {
     }
     static void allPath(String p, boolean[][] maze, int r, int c,int[][] path, int step ) {
         if (r == maze.length - 1 && c == maze[0].length - 1) {
-          path[r][c] = step;
+          path[r][c] = step;//this is also a step that will count..
            for(int[] j : path){
                System.out.println(Arrays.toString(j));
            }
